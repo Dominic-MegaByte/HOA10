@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="top-nav">
+        <img src="{% static 'IMG/pen-icon-2.png' %}" alt="Logo">
+        <div class="text">
+            <h1>Aqua Pen</h1>
+        </div>
+        <div class="navigation">
+            <a href="{% url 'about_me' %}">
+                <img src="{% static 'IMG/about-me-icon.png' %}" alt="Logo" title="About Me">
+            </a>
+            <a href="{% url 'know_me_well' %}">
+                <img src="{% static 'IMG/know-me-well-icon.png' %}" alt="Logo" title="Know Me Well">
+            </a>
+        </div>
+    </div>
+
+    <div class="hoa5">
+        <h1>HOA_5 | KNOW ME WELL</h1>
+        <p>Get to know me better with this IG Trend.</p>
+    </div>
+    
+    <div class="container-hoa5">
+        <div class="card-hoa5" data-image="{% static 'IMG/hobby.jpg' %}" title="Writing, the voice of the soul"> Hobby </div>        
+        <div class="card-hoa5" data-image="{% static 'IMG/flower.jpg' %}" title="Lotus, the bloom of resilience"> Flower </div> 
+        <div class="card-hoa5" data-image="{% static 'IMG/color.jpg' %}" title="Blue, the color of calm"> Color </div> 
+        <div class="card-hoa5" data-image="{% static 'IMG/season.jpg' %}" title="Fall, the whisper of change"> Season </div> 
+        <div class="card-hoa5" data-image="{% static 'IMG/character.jpg' %}" title="Odysseus, the mind of a wanderer"> Character </div> 
+        <div class="card-hoa5" data-image="{% static 'IMG/dessert.jpg' %}" title="Cookies and Cream Ice Cream, the swirl of indulgence"> Dessert </div> 
+        <div class="card-hoa5" data-image="{% static 'IMG/food.jpg' %}" title="Bread and Pastries, the warmth of comfort"> Food </div> 
+        <div class="card-hoa5" data-image="{% static 'IMG/place.jpg' %}" title="Valley, the cradle of serenity"> Place </div> 
+        <div class="card-hoa5" data-image="{% static 'IMG/time.jpg' %}" title="Nighttime, the veil of mystery"> Time </div> 
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
+
+
+<!-- Resources/References -->
+<!-- Hobby - Natasharenas. (n.d.). Write aesthetic. Pinterest. https://ph.pinterest.com/pin/38984353018023031/ -->
+<!-- Flower - Fashion, Fashion Ideas, Women Fashion. (n.d.). The Symbolism Of Seeing A White Lotus In A Dream. Pinterest. https://ph.pinterest.com/pin/180918110026594495/ -->
+<!-- Color - scoutingthetrooper. (n.d.). Night. Tumblr. https://www.tumblr.com/scoutingthetrooper/725312588094865408  -->
+<!-- Season - ~•TuDoria•~. (n.d.). ✒📜🍂. Pinterest. https://ph.pinterest.com/pin/28499410136913897/ -->
+<!-- Character -  ੭ cy cy ୨𝑒. (n.d.). ﹏ ODYSEUS ；EPIC. Pinterest. https://ph.pinterest.com/pin/94223817197353038/ -->
+<!-- Dessert - Richanddelish. (n.d.). Cookies And Cream Ice Cream (No Churn). Pinterest. https://ph.pinterest.com/pin/933863672731969729/ -->
+<!-- Food -  Freepik. (n.d.). Premium Photo | Delicious natural aesthetic baked bread. Pinterest. https://ph.pinterest.com/pin/957155727044357629/ -->
+<!-- Place - YouPic. (n.d.). Field’s Valley by tricialpat on YouPic. Pinterest. https://ph.pinterest.com/pin/975029388124841310/  -->
+<!-- Time Jennings, G. (n.d.). YouPic. (n.d.). Field’s Valley by tricialpat on YouPic. Pinterest. https://ph.pinterest.com/pin/975029388124841310/. https://www.flickr.com/photos/grainge1973/15597220686 -->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .home-greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Occupy the full height of the viewport */
+    background-color: #2E2E2E; /* Add a background color */
+    color: white; /* Set text color */
+    font-size: 5vw; /* Adjust font size for large text */
+    text-align: center;
+    margin: 3%;
+}
+</style>
+</head>
+
+<body>
+    <div class="top-nav">
+        <img src="{% static 'IMG/pen-icon-2.png' %}" alt="Logo">
+        <div class="text">
+            <h1>Aqua Pen</h1>
+        </div>
+        <div class="navigation">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'IMG/home-icon.png' %}" alt="Logo" title="Home">
+            </a>
+            <a href="{% url 'about_me' %}">
+                <img src="{% static 'IMG/about-me-icon.png' %}" alt="Logo" title="About Me">
+            </a>
+            <a href="{% url 'know_me_well' %}">
+              <img src="{% static 'IMG/know-me-well-icon.png' %}" alt="Logo" title="Know Me Well">
+          </a>
+            <a href="{% url 'zodiac_signs' %}">
+              <img src="{% static 'IMG/zodiac-icon.png' %}" alt="Logo" title="Zodiac Signs">
+            </a>
+        </div>
+    </div>
+
+    <div class="home-greeting">
+        <h1>Hello, Welcome to Aqua Pen!</h1>
+    </div>
+    
+</body>
+</html>
+
+
+

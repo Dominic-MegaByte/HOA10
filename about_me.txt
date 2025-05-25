@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="top-nav">
+        <img src="{% static 'IMG/pen-icon-2.png' %}" alt="Logo">
+        <div class="text">
+            <h1>Aqua Pen</h1>
+        </div>
+    </div>
+    
+      <div class="main">
+        <nav class="side-nav">
+          <div class="side-container">
+            <img src="{% static 'IMG/me.png' %}" alt="Logo">
+            <div class="text">
+              <h1> <i> Who Am I </i> </h1>
+              <br>
+              <p> Hi! I'm Andrew Dominic L. Ma-ano also known by my internet persona of <b>"Aqua Pen"</b>. I have experience in creating arts in terms of drawing, digital graphics, and creating codes.</p>
+              <br>
+              <p> Now please indulge yourselves as you get to know me better.</p>
+            </div>
+          </div>
+          <br>
+            <a href="#section1">Skills</a>
+            <a href="#section2">Experience</a>
+            <a href="#section3">Gallery</a>
+        </nav>
+    
+        <div class="content">
+          <section id="section1">
+            <h2>Skills</h2>
+            <div class="skillsandexperience">
+            <p>
+                <img src="{% static 'IMG/CREATIVITY.png' %}" alt="Logo">
+                <b> Creativity and Problem-Solving </b> <p> - With experience both from school and personal life struggles, I have developed a knack for quickly creating or imagining something out of simple things and thinking carefully about how to overcome challenges in life.</p>
+            </p>
+            <p>
+                <img src="{% static 'IMG/ATTENTION.png' %}" alt="Logo">
+                <b> Attention to Detail </b> <p> - Ensuring that the quality of my works and outputs embody my vision.</p>
+            </p>
+            <p>
+                <img src="{% static 'IMG/TECHNICAL.png' %}" alt="Logo">
+                <b> Technical Proficiency </b> <p> - Mastery of any kind of software whether it is in the field of writing, coding, web development, or creation of digital graphics. </p>
+            </p>
+            <p>
+                <img src="{% static 'IMG/TIME.png' %}" alt="Logo">
+                <b> Time Management and Organization </b> <p> - Meeting deadlines before or on time.</p>
+            </p>
+            <p>
+                <img src="{% static 'IMG/LEARNING.png' %}" alt="Logo">
+                <b> Continuous Learning </b> <p> - Keeping up with new discoveries and applying them to the creation of my works.</p>
+            </p>
+            </div>
+          </section>
+          <section id="section2">
+            <h2>Experience</h2>
+            <div class="skillsandexperience">
+              <p>
+                <img src="{% static 'IMG/CODING.png' %}" alt="Logo">
+                <b> Coding </b> <p> - Learned and experienced during my collegiate years.</p>
+              </p>
+              <p>
+                <img src="{% static 'IMG/COMPUTER.png' %}" alt="Logo">
+                <b> Computer Repair </b> <p> - Repairing and troubleshooting any electronic devices.</p>
+              </p>
+              <p>
+                <img src="{% static 'IMG/WEBDEV.png' %}" alt="Logo">
+                <b> Website Development </b> <p> - Ability to create and maintain a working website using HTML, CSS, JavaScript, and backend coding.</p>
+              </p>
+              <p>
+                <img src="{% static 'IMG/WRITING.png' %}" alt="Logo">
+                <b> Writing </b> <p> - Can create wonderful literary art in both fiction and non-fiction genres.</p>
+              </p>
+              <p>
+                <img src="{% static 'IMG/PYTHON.png' %}" alt="Logo">
+                <b> Python </b> <p> - Using Python as the main language in coding.</p>
+              </p>
+            </div>
+          </section>
+          <section id="section3">
+            <h2>Gallery</h2>
+            <div class="gallery">
+              <div class="gallery-item">
+                  <img src="{% static 'IMG/PROG1.png' %}" alt="Logo">
+                  <p>Sample code for my Python Procedural Project</p>
+              </div>
+              <div class="gallery-item">
+                  <img src="{% static 'IMG/PROG2.png' %}" alt="Logo">
+                  <p>Sample code for my Website Development Project</p>
+              </div>
+              <div class="gallery-item">
+                  <img src="{% static 'IMG/LOGO1.png' %}" alt="Logo">
+                  <p>Commissioned Logo 1</p>
+              </div>
+              <div class="gallery-item">
+                  <img src="{% static 'IMG/LOGO2.png' %}" alt="Logo">
+                  <p>Commissioned Logo 2</p>
+              </div>
+          </div>
+          </section>
+        </div> 
+      </div> 
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Signs</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="top-nav">
+        <img src="{% static 'IMG/pen-icon-2.png' %}" alt="Logo">
+        <div class="text">
+            <h1>Aqua Pen</h1>
+        </div>
+        <div class="navigation">
+            <a href="{% url 'about_me' %}">
+                <img src="{% static 'IMG/about-me-icon.png' %}" alt="Logo" title="About Me">
+            </a>
+            <a href="{% url 'know_me_well' %}">
+              <img src="{% static 'IMG/know-me-well-icon.png' %}" alt="Logo" title="Know Me Well">
+          </a>
+            <a href="{% url 'zodiac_signs' %}">
+              <img src="{% static 'IMG/zodiac-icon.png' %}" alt="Logo" title="Zodiac Signs">
+            </a>
+        </div>
+      </div>
+
+      <div class="zodiac">
+        <img src="{% static 'IMG/zodiac-signs.jpg' %}" alt="Logo">
+        <h1> HOA_5 | ZODIAC SIGNS </h1>
+      </div>
+      
+      <div class="zodiac">
+        <form method="POST" action="{% url 'zodiac_signs' %}"> 
+            {% csrf_token %}
+            <div class="search-container">
+                <input type="text" placeholder="Zodiac Signs..." name="searched">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
+      </div>
+      
+      {% if searched %}
+      <h2>Search Results for "{{ searched }}"</h2>
+      {% if signs %}
+        <table border="0">
+            <tr>
+                <th>Name</th>
+                <th>Months</th>
+                <th>Element</th>
+                <th>Symbol</th>
+                <th>Nickname</th>
+                <th>Compatibility</th>
+                <th>Personalities</th>
+                <th>Weakness</th>
+                <th>Modalities</th>
+            </tr>
+            {% for sign in signs %}
+            <tr>
+                <td>{{ sign.name }}</td>
+                <td>{{ sign.months }}</td>
+                <td>{{ sign.element }}</td>
+                <td>{{ sign.symbol }}</td>
+                <td>{{ sign.nickname }}</td>
+                <td>{{ sign.compatibility }}</td>
+                <td>{{ sign.personalities }}</td>
+                <td>{{ sign.weakness }}</td>
+                <td>{{ sign.modalities }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+      {% else %}
+        <p>No results found for "{{ searched }}".</p>
+      {% endif %}
+      {% endif %}
+</body>
+</html>
